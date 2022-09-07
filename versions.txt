@@ -1,2 +1,3 @@
-open versions.txt
-ls
+Git version 2.34.1
+G++ version 11.2.0
+Make version 4.3
