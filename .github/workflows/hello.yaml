@@ -1,0 +1,7 @@
+Name of your workflow
+On: push; Specify exact paths
+Jobs:
+  Name of Job
+  Steps
+Uses: actions/checkout@v2
+
