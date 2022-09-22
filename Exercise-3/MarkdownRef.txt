@@ -1,0 +1,14 @@
+**Bold**
+*Italic*
+~~Strikethrough~~
+***Bold and Italic***
+<sub>Subscript</sub>
+[link name](link)
+![image description](image link)
+[^1]: footnote
+|Table heading|
+|-------------|
+|Table info   |
+```
+{Code}
+```
