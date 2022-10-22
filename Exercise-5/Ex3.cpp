@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -13,15 +14,21 @@ int main() {
 	double b1 = 0;
 	double b0 = 0;
 	double result;
-	ifstream fin("nums.txt");
+	ifstream inFile;
+	string file;
+	cout << "Enter name of file where numbers are located" << endl;
+	cin >> file;
+	inFile.open(file);
+	//ifstream fin("nums.txt");
 	double element;
-	while(fin >> element){
+	while(inFile >> element){
 		data.push_back(element);
 	}
 	for(int i = 0; i < data.size(); i++){
 		xmean += data[i++];
 		ymean += data[i];
 	}
+	inFile.close();
 	xmean /= (data.size() / 2);
 	ymean /= (data.size() / 2);
 	for(int i = 0; i < data.size(); i++){
